@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.GuigdeTest"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1ca6c7"
+    android:orientation="vertical" >
+
+    <com.example.GuigdeTest.CustomScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdgeLength="0dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="60dp" >
+
+            <ImageView
+                android:id="@+id/guide1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="135dp"
+                android:src="@drawable/guide1" />
+
+            <ImageView
+                android:id="@+id/guide3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/guide1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="170dp"
+                android:src="@drawable/guide3" />
+
+            <com.example.GuigdeTest.Child1RelativeLayout
+                android:id="@+id/part1_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/guide3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal"
+                app:child1="@+id/guid7"
+                app:child2="@+id/guide5" >
+
+                <ImageView
+                    android:id="@+id/guide15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/guide15" />
+
+                <ImageView
+                    android:id="@id/guid7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@id/guide15"
+                    android:src="@drawable/guid7"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@id/guide5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/guide15"
+                    android:src="@drawable/guide5"
+                    android:visibility="invisible" />
+            </com.example.GuigdeTest.Child1RelativeLayout>
+
+            <com.example.GuigdeTest.Child1RelativeLayout
+                android:id="@+id/part2_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part1_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                app:child1="@+id/guide6"
+                app:child2="@+id/guide8" >
+
+                <ImageView
+                    android:id="@+id/guide151"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/guide15" />
+
+                <ImageView
+                    android:id="@id/guide6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@id/guide151"
+                    android:src="@drawable/guide6" />
+
+                <ImageView
+                    android:id="@id/guide8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/guide151"
+                    android:src="@drawable/guide8" />
+            </com.example.GuigdeTest.Child1RelativeLayout>
+
+            <com.example.GuigdeTest.Child1RelativeLayout
+                android:id="@+id/part3_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part2_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                app:child1="@+id/guide10"
+                app:child2="@+id/guide9" >
+
+                <ImageView
+                    android:id="@+id/guide152"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/guide15" />
+
+                <ImageView
+                    android:id="@id/guide10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@id/guide152"
+                    android:src="@drawable/guide10" />
+
+                <ImageView
+                    android:id="@id/guide9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/guide152"
+                    android:src="@drawable/guide9" />
+            </com.example.GuigdeTest.Child1RelativeLayout>
+
+            <com.example.GuigdeTest.Child1RelativeLayout
+                android:id="@+id/part4_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part3_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                app:child1="@+id/guide12"
+                app:child2="@+id/guide11" >
+
+                <ImageView
+                    android:id="@+id/guide153"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/guide15" />
+
+                <ImageView
+                    android:id="@id/guide12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@id/guide153"
+                    android:src="@drawable/guide12" />
+
+                <ImageView
+                    android:id="@id/guide11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/guide153"
+                    android:src="@drawable/guide11" />
+            </com.example.GuigdeTest.Child1RelativeLayout>
+
+            <com.example.GuigdeTest.Child1RelativeLayout
+                android:id="@+id/part5_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part4_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                app:child1="@+id/guide14"
+                app:child2="@+id/guide13" >
+
+                <ImageView
+                    android:id="@+id/guide154"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/guide15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/guide4" />
+
+                <ImageView
+                    android:id="@id/guide14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@id/guide154"
+                    android:src="@drawable/guide14" />
+
+                <ImageView
+                    android:id="@id/guide13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/guide154"
+                    android:src="@drawable/guide13"
+                    android:visibility="invisible" />
+            </com.example.GuigdeTest.Child1RelativeLayout>
+
+            <ImageView
+                android:id="@+id/guide4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/part5_view"
+                android:layout_below="@id/guide3"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/guide4" />
+
+            <com.example.GuigdeTest.Child2ImageView
+                android:id="@+id/part6_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part5_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/guide3"
+                android:visibility="invisible" />
+
+            <com.example.GuigdeTest.Child2RelativeLayout
+                android:id="@+id/part7_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part6_view"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                app:child1="@+id/guide18" >
+
+                <ImageView
+                    android:id="@+id/guide155"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/guide17" />
+
+                <ImageView
+                    android:id="@id/guide18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/guide155"
+                    android:src="@drawable/guide18" />
+            </com.example.GuigdeTest.Child2RelativeLayout>
+
+            <com.example.GuigdeTest.Child2RelativeLayout
+                android:id="@+id/part8_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part7_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="90dp"
+                android:layout_marginTop="90dp"
+                android:orientation="horizontal"
+                app:child2="@+id/guide19" >
+
+                <ImageView
+                    android:id="@+id/guide156"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/guide17" />
+
+                <ImageView
+                    android:id="@id/guide19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/guide156"
+                    android:src="@drawable/guide19" />
+            </com.example.GuigdeTest.Child2RelativeLayout>
+
+            <com.example.GuigdeTest.Child2RelativeLayout
+                android:id="@+id/part9_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part8_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="90dp"
+                android:orientation="horizontal"
+                app:child1="@+id/guide20" >
+
+                <ImageView
+                    android:id="@+id/guide157"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/guide17" />
+
+                <ImageView
+                    android:id="@id/guide20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/guide157"
+                    android:src="@drawable/guide20" />
+            </com.example.GuigdeTest.Child2RelativeLayout>
+
+            <com.example.GuigdeTest.Child2RelativeLayout
+                android:id="@+id/part10_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part9_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="90dp"
+                android:orientation="horizontal"
+                app:child2="@+id/guide21" >
+
+                <ImageView
+                    android:id="@+id/guide158"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/guide17" />
+
+                <ImageView
+                    android:id="@id/guide21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/guide158"
+                    android:src="@drawable/guide21" />
+            </com.example.GuigdeTest.Child2RelativeLayout>
+
+            <com.example.GuigdeTest.Child2RelativeLayout
+                android:id="@+id/part11_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part10_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="90dp"
+                android:orientation="horizontal"
+                app:child1="@+id/guide22" >
+
+                <ImageView
+                    android:id="@+id/guide159"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/guide17" />
+
+                <ImageView
+                    android:id="@id/guide22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/guide159"
+                    android:src="@drawable/guide22" />
+            </com.example.GuigdeTest.Child2RelativeLayout>
+
+            <com.example.GuigdeTest.Child2RelativeLayout
+                android:id="@+id/part12_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part11_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                app:child2="@+id/guide23" >
+
+                <ImageView
+                    android:id="@+id/guide160"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/guide17" />
+
+                <ImageView
+                    android:id="@id/guide23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/guide160"
+                    android:src="@drawable/guide23" />
+            </com.example.GuigdeTest.Child2RelativeLayout>
+
+            <ImageView
+                android:id="@+id/line2_view"
+                android:layout_width="wrap_content"
+                android:layout_height="600dp"
+                android:layout_below="@id/part6_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/guide4" />
+
+            <com.example.GuigdeTest.Child2ImageView
+                android:id="@+id/part13_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part12_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/guide24" />
+
+            <com.example.GuigdeTest.Child1ImageView
+                android:id="@+id/move_guide_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part7_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/guide3" />
+        </RelativeLayout>
+    </com.example.GuigdeTest.CustomScrollView>
+
+</FrameLayout>

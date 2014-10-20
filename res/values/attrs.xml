@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ChildRelativeLayout">
+        <!--子控件1的id-->
+        <attr name="child1" format="reference" />
+        <!--子控件2的id-->
+        <attr name="child2" format="reference" />
+    </declare-styleable>
+
+
+</resources>
